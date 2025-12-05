@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**MyPages** is a static site generator for hosting and indexing HTML files on GitHub Pages. It automatically lists HTML files ending with `-AppliedAILabs.html`, specifically designed to showcase AI collaborative whitepapers and AI-enhanced content examples from Center For Applied AI / Applied AI Labs.
+**MyPages** is a static site generator for hosting and indexing files on GitHub Pages. It automatically lists any files containing `-AppliedAILabs` in their filename, specifically designed to showcase AI collaborative whitepapers and AI-enhanced content examples from Center For Applied AI / Applied AI Labs.
 
 ## Architecture
 
@@ -20,7 +20,7 @@ The project uses a **dual-index approach**:
 
 - **`scripts/update_index.py`**: Python script that generates a static version of the index by:
   - Listing all git-tracked files using `git ls-files`
-  - Filtering for files ending with `-AppliedAILabs.html`
+  - Filtering for files containing `-AppliedAILabs` in their filename
   - Building static HTML with links to all matching files
   - Only updating `index.html` if content changed (prevents unnecessary commits)
 
