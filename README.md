@@ -6,11 +6,11 @@ A simple project to easily host and index static HTML files using GitHub Pages.
 
 ## Overview
 
-MyPages generates an index page that automatically lists HTML files ending with "-appliedAILabs.html" in your GitHub repository, making it easy to access specific static HTML documents (like whitepapers, documentation, or other web content) hosted on GitHub Pages.
+MyPages generates an index page that automatically lists files containing "-AppliedAILabs" in your GitHub repository, making it easy to access specific static documents (like whitepapers, documentation, or other web content) hosted on GitHub Pages.
 
 ## Features
 
-- **Filtered File Listing**: Dynamically displays only HTML files ending with "-AppliedAILabs.html"
+- **Filtered File Listing**: Dynamically displays only files containing "-AppliedAILabs"
 - **GitHub Pages Integration**: Designed to work seamlessly with GitHub Pages hosting
 - **Responsive Design**: Clean, mobile-friendly interface
 - **Two Generation Methods**:
@@ -26,7 +26,7 @@ MyPages generates an index page that automatically lists HTML files ending with 
 
 ### Dynamic Index (Default)
 
-The `index.html` file uses JavaScript to fetch and display the file list from the GitHub API. Simply upload your HTML files to the repository and they'll appear in the index automatically.
+The `index.html` file uses JavaScript to fetch and display the file list from the GitHub API. Simply upload your files (with "-AppliedAILabs" in the filename) to the repository and they'll appear in the index automatically.
 
 ### Static Index
 
@@ -41,7 +41,7 @@ This creates a static HTML file that doesn't require JavaScript or API calls.
 ## Setup
 
 1. Fork or clone this repository
-2. Add your static HTML files to the repository root
+2. Add your files (with "-AppliedAILabs" in the filename) to the repository root
 3. Enable GitHub Pages in your repository settings
 4. Access your files via the generated index at your GitHub Pages URL
 
